@@ -17,13 +17,11 @@ function App() {
         <Navbar />
       </GridItem>
       {/* <Show when={{ lg: true }}> */}
-      <GridItem area="aside" bg="gold" display={{ base: "none", lg: "block" }}>
+      <GridItem area="aside" display={{ base: "none", lg: "block" }}>
         Aside
       </GridItem>
       {/* </Show> */}
-      <GridItem area={"main"} bg={"dodgerblue"}>
-        Content
-      </GridItem>
+      <GridItem area={"main"}>Content</GridItem>
     </Grid>
   );
 }
