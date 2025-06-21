@@ -12,14 +12,18 @@ function App() {
       }}
       templateColumns={{
         base: "1fr",
-        lg: "250px 1fr", // or whatever width you want for aside
+        lg: "200px 1fr", // or whatever width you want for aside
       }}
     >
       <GridItem area={"nav"}>
         <Navbar />
       </GridItem>
       {/* <Show when={{ lg: true }}> */}
-      <GridItem area="aside" display={{ base: "none", lg: "block" }}>
+      <GridItem
+        area="aside"
+        paddingX={5}
+        display={{ base: "none", lg: "block" }}
+      >
         <GenreList />
       </GridItem>
       {/* </Show>78u0 */}
