@@ -16,7 +16,7 @@ const ColorModeSwitch = () => {
         <IconButton onClick={toggleColorMode} variant="outline" size="lg">
           {colorMode === "light" ? <LuSun /> : <LuMoon />}
         </IconButton>
-        <Text>Dark Mood</Text>
+        <Text whiteSpace="nowrap">Dark Mood</Text>
       </ClientOnly>
     </HStack>
   );
