@@ -1,4 +1,4 @@
-import UseGenre, { Genre } from "@/hooks/useGenre";
+import UseGenre, { Genre } from "@/hooks/useGenres";
 import getCroppedImageUrl from "@/services/image-url";
 import {
   HStack,

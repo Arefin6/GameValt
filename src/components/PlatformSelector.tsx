@@ -1,4 +1,5 @@
 import { Platform } from "@/hooks/useGame";
+import usePlatform from "@/hooks/usePlatform";
 import UsePlatforms from "@/hooks/usePlatforms";
 import { Button, ButtonGroup, IconButton, Menu } from "@chakra-ui/react";
 import { LuChevronDown } from "react-icons/lu";
@@ -10,9 +11,7 @@ interface Props {
 
 const PlatformSelector = ({ onSelectPlatform, selectedPlatformId }: Props) => {
   const { data, error } = UsePlatforms();
-  const selectedPlatform = data?.results.find(
-    (p) => p.id === selectedPlatformId
-  );
+  const selectedPlatform = usePlatform(selectedPlatformId);
   if (error) return null;
   return (
     <Menu.Root>
