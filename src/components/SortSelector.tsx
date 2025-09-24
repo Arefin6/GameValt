@@ -1,12 +1,8 @@
+import useGameQueryStore from "@/store";
 import { Button, ButtonGroup, IconButton, Menu } from "@chakra-ui/react";
 import { LuChevronDown } from "react-icons/lu";
 
-interface Props {
-  sortOrder: string;
-  onSelectSortOrder: (sortOrder: string) => void;
-}
-
-const SortSelector = ({ onSelectSortOrder, sortOrder }: Props) => {
+const SortSelector = () => {
   const sortOrders = [
     { value: "", label: "Relevance" },
     { value: "-added", label: "Date Added" },
@@ -15,7 +11,8 @@ const SortSelector = ({ onSelectSortOrder, sortOrder }: Props) => {
     { value: "-metacritic", label: "Popularity" },
     { value: "-rating", label: "Average Rating" },
   ];
-
+  const sortOrder = useGameQueryStore((s) => s.gameQuery.sortOrder);
+  const onSelectSortOrder = useGameQueryStore((s) => s.setSortOrder);
   const currentSort = sortOrders.find((sort) => sort.value === sortOrder);
   return (
     <Menu.Root>
