@@ -12,7 +12,7 @@ const PlatformSelector = () => {
   if (error) return null;
   return (
     <Menu.Root>
-      <Menu.Trigger asChild>
+      <Menu.Trigger>
         <ButtonGroup size="lg" variant="outline" attached>
           <Button variant="outline">
             {selectedPlatform?.name || "Platforms"}
@@ -26,9 +26,10 @@ const PlatformSelector = () => {
       <Menu.Positioner>
         <Menu.Content>
           {data?.results.map((platform) => (
+            // @ts-ignore
             <Menu.Item
-              onClick={() => setPlatformId(platform.id)}
               key={platform.id}
+              onClick={() => setPlatformId(platform.id)}
             >
               {platform.name}
             </Menu.Item>

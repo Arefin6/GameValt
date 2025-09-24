@@ -16,7 +16,7 @@ const SortSelector = () => {
   const currentSort = sortOrders.find((sort) => sort.value === sortOrder);
   return (
     <Menu.Root>
-      <Menu.Trigger asChild>
+      <Menu.Trigger>
         <ButtonGroup size="lg" variant="outline" attached>
           <Button variant="outline">
             Order by: {currentSort?.label || "Relevance"}
@@ -30,6 +30,7 @@ const SortSelector = () => {
       <Menu.Positioner>
         <Menu.Content>
           {sortOrders.map((sort) => (
+            //@ts-ignore
             <Menu.Item
               onClick={() => onSelectSortOrder(sort.value)}
               key={sort.value}
