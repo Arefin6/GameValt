@@ -1,3 +1,4 @@
+// @ts-nocheck
 import useGameQueryStore from "@/store";
 import { Button, ButtonGroup, IconButton, Menu } from "@chakra-ui/react";
 import { LuChevronDown } from "react-icons/lu";

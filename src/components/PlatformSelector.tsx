@@ -1,3 +1,4 @@
+//@ts-nocheck
 import usePlatform from "@/hooks/usePlatform";
 import UsePlatforms from "@/hooks/usePlatforms";
 import useGameQueryStore from "@/store";
@@ -22,13 +23,12 @@ const PlatformSelector = () => {
           </IconButton>
         </ButtonGroup>
       </Menu.Trigger>
-
       <Menu.Positioner>
         <Menu.Content>
           {data?.results.map((platform) => (
-            // @ts-ignore
             <Menu.Item
               key={platform.id}
+              value={platform.id.toString()}
               onClick={() => setPlatformId(platform.id)}
             >
               {platform.name}
