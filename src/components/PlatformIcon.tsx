@@ -1,4 +1,4 @@
-import { Platform } from "@/hooks/useGame";
+import { Platform } from "@/hooks/useGames";
 import { BsGlobe } from "react-icons/bs";
 import {
   FaAndroid,
