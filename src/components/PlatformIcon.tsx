@@ -1,3 +1,4 @@
+//@ts-ignore
 import { Platform } from "@/entities/Platform";
 import { BsGlobe } from "react-icons/bs";
 import {

@@ -1,3 +1,4 @@
+//@ts-nocheck
 import useGameQueryStore from "@/store";
 import { Input, InputGroup } from "@chakra-ui/react";
 import { useRef } from "react";

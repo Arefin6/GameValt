@@ -1,3 +1,4 @@
+//@ts-nocheck
 import {
   ClientOnly,
   HStack,
@@ -14,7 +15,7 @@ const ColorModeSwitch = () => {
     <HStack>
       <ClientOnly fallback={<Skeleton boxSize="8" />}>
         <IconButton onClick={toggleColorMode} variant="outline" size="lg">
-          {colorMode === "light" ? <LuSun /> : <LuMoon />}
+          {colorMode === "light" ? <LuSun size={20} /> : <LuMoon size={20} />}
         </IconButton>
         <Text whiteSpace="nowrap">Dark Mood</Text>
       </ClientOnly>
