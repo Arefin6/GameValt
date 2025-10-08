@@ -42,6 +42,10 @@ Browse, search, filter, and explore games across platforms and genres — all in
 git clone https://github.com/Arefin6/GameValt.git
 cd GameValt
 npm install
-```bash
+```
+💬 Stay in Touch
 
-hee
+If you like the project or want to contribute, feel free to star ⭐ or submit a PR!
+You can reach me via GitHub or email (add your contact).
+
+Happy gaming & coding!
