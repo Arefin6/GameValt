@@ -41,7 +41,7 @@ Browse, search, filter, and explore games across platforms and genres — all in
 ```bash
 git clone https://github.com/Arefin6/GameValt.git
 cd GameValt
----
-sdsds
 npm install
+```bash
 
+hee
